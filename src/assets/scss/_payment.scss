@@ -1,0 +1,171 @@
+.mv {
+    &__pay {
+        &--heading{
+            padding: 30px 0 0 0;
+            & p{
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+        &--back {
+            padding-top: 50px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 0 21px;
+                cursor: pointer;
+                & span {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        &--content {
+            padding: 50px 0;
+            display: flex;
+            gap: 0 50px;
+            & p {
+                font-size: 24px;
+            }
+        }
+        &--left {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+            &-pack{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 20px;
+                background-color: $gray-color;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow:
+                    inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+                    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+                    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+                    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+                    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+            }
+            &-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                gap: 0 20px;
+                background-color: $gray-color;
+                border-radius: 10px;
+                cursor: pointer;
+                box-shadow:
+                    inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+                    0 0 0 1px hsla(230, 13%, 9%, 0.075),
+                    0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+                    0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+                    0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+                & label {
+                    cursor: pointer;
+                }
+                & input[type="radio"] {
+                    appearance: none;
+                    background-color: #fff;
+                    margin: 0;
+                    font: inherit;
+                    color: currentColor;
+                    width: 1.15em;
+                    height: 1.15em;
+                    border: 0.15em solid currentColor;
+                    border-radius: 50%;
+                    display: grid;
+                    place-content: center;
+                }
+
+                & input[type="radio"]::before {
+                    content: "";
+                    width: 0.65em;
+                    height: 0.65em;
+                    border-radius: 50%;
+                    transform: scale(0);
+                    transition: 120ms transform ease-in-out;
+                    box-shadow: inset 1em 1em $primary;
+                }
+
+                & input[type="radio"]:checked::before {
+                    transform: scale(1);
+                }
+                & img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &--right {
+            width: 40%;
+            padding: 20px 30px;
+            background-color: $gray-color;
+            border-radius: 10px;
+            box-shadow:
+                inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+                0 0 0 1px hsla(230, 13%, 9%, 0.075),
+                0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+                0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+                0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+        }
+        &--info {
+            & p {
+                padding: 0 0 30px 0;
+                font-size: 24px;
+            }
+            &-acc, &-price, &-total {
+                display: flex;
+                padding: 20px 0;
+                align-items: center;
+                justify-content: space-between;
+                & span:nth-child(1) {
+                    color: $opacity-color;
+                }
+            }
+            &-pack {
+                & table {
+                    width: 100%;
+                    & tr {
+                        & td {
+                            padding: 15px 0;
+                        }
+                        & td:nth-child(odd) {
+                            color: $opacity-color;
+                        }
+                        & td:nth-child(even) {
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+            &-total{
+                & span:nth-child(2){
+                    font-size: 24px;
+                    color: $primary;
+                }
+            }
+            &-btn{
+                padding: 10px 0;
+                & button{
+                    width: 100%;
+                    border-radius: 10px;
+                    color: #fff
+                };
+            }
+            &-desc{
+                padding-top: 20px;
+                line-height: 1.6;
+                display: flex;
+                font-size: 14px;
+                text-align: center;
+
+            }
+        }
+    }
+}

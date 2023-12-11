@@ -1,0 +1,123 @@
+.mv {
+    &__list {
+        margin-top: 69px;
+        &--header {
+            padding-bottom: 53px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 0 21px;
+                & a {
+                    font-size: 24px;
+                }
+            }
+        }
+        &--title {
+            padding-bottom: 35px;
+        }
+        &--movies {
+            padding: 20px 0 0 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 30px 30px;
+            &-item {
+                position: relative;
+                width: 300px;
+                height: 525px;
+                border-radius: 15px;
+                cursor: pointer;
+                box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1),
+                0 0 0 1px hsla(230, 13%, 9%, 0.075),
+                0 0.3px 0.4px hsla(230, 13%, 9%, 0.02),
+                0 0.9px 1.5px hsla(230, 13%, 9%, 0.045),
+                0 3.5px 6px hsla(230, 13%, 9%, 0.09);
+                transition: 0.3s;
+                &:hover{
+                    opacity: 0.7;
+                }
+            
+            }
+            
+            &-img{
+                opacity: 0.8;
+                object-fit: cover;
+                width: 100%;
+                height: 300px;
+                border-radius: 15px 15px 0 0;
+            }
+            &-content {
+                line-height: 1.5;
+                padding: 0 25px;
+            }
+            &-rated {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 77px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $bl-color;
+                font-weight: 600;
+                border-radius: 0px 17px;
+                background-color: $primary;
+                box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+            }
+            &-name {
+                padding-top: 15px;
+                font-size: 25px;
+                height: 90px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                white-space: pre-wrap;
+            }
+            &-star {
+                color: $primary;
+                font-size: 18px;
+            }
+            &-info{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: $opacity-color;
+                padding-bottom: 10px;
+
+            }
+            &-desc span {
+                color: $opacity-color;
+                font-size: 15px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                white-space: pre-wrap;
+            }
+        }
+    }
+}
+@media (max-width: 1580px) {
+    .mv__list--movies{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px 30px;
+    }
+}
+@media (max-width: 1279px) {
+    .mv__list--movies{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px 30px;
+        justify-items: center;
+
+    }
+}
+@media (max-width: 1024px) {
+    .mv__list--movies{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px 30px;
+    }
+}
+@media (max-width: 800px) {
+
+}
