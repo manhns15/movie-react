@@ -24,62 +24,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://i.pinimg.com/736x/f3/f0/4a/f3f04a485eaad60915d70bb3df8e6440.jpg",
-      "Trailer":"/videos/avatar_trailer.mp4",
-      "Performer": [
-        {
-          "id": 1,
-          "image": "https://californiamuseum.org/wp-content/uploads/robertdowneyjr_cahalloffameinductee-1.png",
-          "name": "Robert Downey Jr."
-        },
-        {
-          "id": 2,
-          "image": "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_FMjpg_UX1000_.jpg",
-          "name": "Scarlett Johansson"
-        },
-        {
-          "id": 3,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Tom_Hiddleston_%2827992938324%29_%28cropped%29.jpg",
-          "name": "Tom Hiddleston"
-        },
-        {
-          "id": 4,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/1200px-Tom_Holland_by_Gage_Skidmore.jpg",
-          "name": "Tom Holland"
-        },
-        {
-          "id": 5,
-          "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/BCumberbatch_Comic-Con_2019.jpg",
-          "name": "Benedict Cumberbatch"
-        }
-      ],
-      "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
-    },
-    {
-      "id": 2,
-      "Title": "Loki",
-      "Year": "2007",
-      "Rated": "PG-13",
-      "Released": "14 Dec 2007",
-      "Runtime": "101 min",
-      "Genre": "Drama, Horror, Sci-Fi",
-      "Director": "Francis Lawrence",
-      "Writer": "Mark Protosevich (screenplay), Akiva Goldsman (screenplay), Richard Matheson (novel), John William Corrington, Joyce Hooper Corrington",
-      "Actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
-      "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
-      "Language": "English",
-      "Country": "USA",
-      "Awards": "9 wins & 21 nominations.",
-      "Poster": "https://www.escapistmagazine.com/wp-content/uploads/2023/05/loki-season-2-release-date-echo-mcu.jpg?fit=1280%2C720",
-      "Metascore": "65",
-      "imdbRating": "8.2",
-      "imdbVotes": "533,874",
-      "imdbID": "tt0480249",
-      "Type": "movie",
-      "Response": "True",
-      "Images": "https://static.gamehub.vn/img/files/2021/03/19/gamehubvn-drama-loki-poster-1.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/avatar_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -108,8 +53,63 @@
         }
       ],
       "IsPayment": true,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": "visa"
+    },
+    {
+      "id": 2,
+      "Title": "Loki",
+      "Year": "2007",
+      "Rated": "PG-13",
+      "Released": "14 Dec 2007",
+      "Runtime": "101 min",
+      "Genre": "Drama, Horror, Sci-Fi",
+      "Director": "Francis Lawrence",
+      "Writer": "Mark Protosevich (screenplay), Akiva Goldsman (screenplay), Richard Matheson (novel), John William Corrington, Joyce Hooper Corrington",
+      "Actors": "Will Smith, Alice Braga, Charlie Tahan, Salli Richardson-Whitfield",
+      "Plot": "Years after a plague kills most of humanity and transforms the rest into monsters, the sole survivor in New York City struggles valiantly to find a cure.",
+      "Language": "English",
+      "Country": "USA",
+      "Awards": "9 wins & 21 nominations.",
+      "Poster": "https://www.escapistmagazine.com/wp-content/uploads/2023/05/loki-season-2-release-date-echo-mcu.jpg?fit=1280%2C720",
+      "Metascore": "65",
+      "imdbRating": "8.2",
+      "imdbVotes": "533,874",
+      "imdbID": "tt0480249",
+      "Type": "movie",
+      "Response": "True",
+      "Images": "https://static.gamehub.vn/img/files/2021/03/19/gamehubvn-drama-loki-poster-1.jpg",
+      "Trailer": "/videos/marvel_trailer.mp4",
+      "Performer": [
+        {
+          "id": 1,
+          "image": "https://californiamuseum.org/wp-content/uploads/robertdowneyjr_cahalloffameinductee-1.png",
+          "name": "Robert Downey Jr."
+        },
+        {
+          "id": 2,
+          "image": "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_FMjpg_UX1000_.jpg",
+          "name": "Scarlett Johansson"
+        },
+        {
+          "id": 3,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Tom_Hiddleston_%2827992938324%29_%28cropped%29.jpg",
+          "name": "Tom Hiddleston"
+        },
+        {
+          "id": 4,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tom_Holland_by_Gage_Skidmore.jpg/1200px-Tom_Holland_by_Gage_Skidmore.jpg",
+          "name": "Tom Holland"
+        },
+        {
+          "id": 5,
+          "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/BCumberbatch_Comic-Con_2019.jpg",
+          "name": "Benedict Cumberbatch"
+        }
+      ],
+      "IsPayment": true,
+      "Price": 100,
+      "PaymentMethod": "momo"
     },
     {
       "id": 3,
@@ -135,7 +135,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://www.postersplug.com/cdn/shop/products/iron-man-legacy-poster-938755.png?v=1692899935",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -163,9 +163,9 @@
           "name": "Benedict Cumberbatch"
         }
       ],
-      "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "IsPayment": true,
+      "Price": 100,
+      "PaymentMethod": "napas"
     },
     {
       "id": 4,
@@ -191,7 +191,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://cdn-amz.woka.io/images/I/71niXI3lxlL.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -220,8 +220,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 5,
@@ -247,7 +247,7 @@
       "totalSeasons": "1000",
       "Response": "True",
       "Images": "https://www.ubuy.vn/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaW4vNjMzZmYxMTU3ZTNmYmMyNTU1NzUxN2M4LW9uZS1waWVjZS1wb3N0ZXItamFwYW5lc2UtYW5pbWUtcG9zdGVycy5qcGc.jpg",
-      "Trailer":"/videos/op_trailer.mp4",
+      "Trailer": "/videos/op_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -276,8 +276,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 6,
@@ -303,7 +303,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://mondoshop.com/cdn/shop/products/Taylor_Spider-Man_NWH_PeterTwo_large_8a56b9d6-4d76-401a-bad9-73f2fbd8a6b1.jpg?v=1661784995",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -332,8 +332,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 7,
@@ -359,7 +359,7 @@
       "totalSeasons": "7",
       "Response": "True",
       "Images": "https://genk.mediacdn.vn/2019/3/1/photo-1-15514107930151513503545.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -388,8 +388,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 8,
@@ -415,7 +415,7 @@
       "totalSeasons": "5",
       "Response": "True",
       "Images": "https://imaginus.ca/cdn/shop/products/81kVdgR745L._AC_SL1500.jpg?v=1642799943",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -444,8 +444,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 9,
@@ -471,7 +471,7 @@
       "totalSeasons": "3",
       "Response": "True",
       "Images": "https://i.ebayimg.com/images/g/FSIAAOSwg2xZehD6/s-l1600.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -500,8 +500,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 10,
@@ -527,7 +527,7 @@
       "totalSeasons": "3",
       "Response": "True",
       "Images": "https://tvline.com/wp-content/uploads/2018/05/power-season-5-poster-key-art-starz.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -556,8 +556,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 11,
@@ -583,7 +583,7 @@
       "totalSeasons": "2",
       "Response": "True",
       "Images": "https://m.media-amazon.com/images/I/81nTw+95MyL.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -612,8 +612,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 12,
@@ -639,7 +639,7 @@
       "totalSeasons": "5",
       "Response": "True",
       "Images": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/2cd7d911377377.560f6bdfb0dab.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -668,8 +668,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 13,
@@ -695,7 +695,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://i.pinimg.com/originals/91/13/79/911379ee2a1bc5388414ec692aea80d7.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -724,8 +724,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 14,
@@ -751,7 +751,7 @@
       "totalSeasons": "1",
       "Response": "True",
       "Images": "https://i.ebayimg.com/images/g/JvcAAOSwRE5jB2eB/s-l1200.webp",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -779,9 +779,9 @@
           "name": "Benedict Cumberbatch"
         }
       ],
-      "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "IsPayment": true,
+      "Price": 100,
+      "PaymentMethod": "momo"
     },
     {
       "id": 15,
@@ -807,7 +807,7 @@
       "totalSeasons": "5",
       "Response": "True",
       "Images": "https://m.media-amazon.com/images/I/91ywK+Cso9L._AC_UF1000,1000_QL80_.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -836,8 +836,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     },
     {
       "id": 16,
@@ -863,7 +863,7 @@
       "totalSeasons": "3",
       "Response": "True",
       "Images": "https://m.media-amazon.com/images/I/71xby-zAr7L._AC_UF1000,1000_QL80_.jpg",
-      "Trailer":"/videos/marvel_trailer.mp4",
+      "Trailer": "/videos/marvel_trailer.mp4",
       "Performer": [
         {
           "id": 1,
@@ -892,8 +892,8 @@
         }
       ],
       "IsPayment": false,
-      "Price": 100.00,
-      "PaymentMethod":""
+      "Price": 100,
+      "PaymentMethod": ""
     }
   ]
 }

@@ -14,7 +14,7 @@ const MovieItem: FC<moviesProps> = ({ items }) => {
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = startIndex + pageSize;
     const totalPages = Math.ceil(items?.length / pageSize);
-
+    items.sort((firstItem, secondItem) =>  new Date(secondItem.Year).valueOf()  - new Date(firstItem.Year).valueOf());
 
     const handleNavigate = (id: number) => {
         navigate(`/movie-detail/${id}`);
@@ -22,8 +22,8 @@ const MovieItem: FC<moviesProps> = ({ items }) => {
 
     const handlePageChange = (newPage: number) => {
         setCurrentPage(newPage);
-    };
-
+    }; 
+    
     return (
         <>
             <div className="mv__list--movies" >

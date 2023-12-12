@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { MovieState, MovieActionTypes } from "../actions/types";
+import { MovieState, MovieActionTypes, Movie } from "../actions/types";
 
 const initialState: MovieState = {
   movies: [],
@@ -29,6 +29,14 @@ const movieReducer = (state = initialState, action: any): MovieState => {
         ...state,
         movie: action.payload,
       };
+    
+    // case MovieActionTypes.PAY_MOVIE_SUCCESS:
+    //   return{
+    //     ...state,
+    //     movies: state.movies.map((item: Movie) =>
+    //     item.id === action.payload.id ? { ...item, ...action.payload } : item
+    //   ),
+    //   }
     default:
       return state;
   }

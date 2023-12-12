@@ -20,7 +20,7 @@ function App() {
               <Route path="series" element={<Series />} />
             </Route>
             <Route path='/movie-detail/:id' element={<MovieDetail/>}></Route>
-            <Route path='/payment' element={<Payment />}></Route>
+            <Route path='/payment/:id' element={<Payment />}></Route>
 
           </Routes>
         </div>

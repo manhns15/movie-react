@@ -1,4 +1,4 @@
-import { all, call, put, takeLatest } from 'redux-saga/effects';
+import { call, put, takeEvery } from 'redux-saga/effects';
 import { fetchMoviesSuccess, fetchMovieByIdSuccess } from '../actions/actions';
 import { MovieActionTypes } from '../actions/types';
 import movieService from '../api/movieAPI';
@@ -13,7 +13,7 @@ function* fetchMoviesSaga() {
   }
 }
 
-function* fetchMovieByIdSaga(action: any) {
+function* fetchMovieByIdSaga(action:any) {
   try {
     const response = yield call(movieService.getMovie, action.payload.id);
     yield put(fetchMovieByIdSuccess(response.data));
@@ -22,9 +22,21 @@ function* fetchMovieByIdSaga(action: any) {
   }
 }
 
+// function* payMovieSaga(action: any) {
+//   try {
+//     const { id, data } = action.payload;
+//     const response = yield call(movieService.updateMovie, id, data);
+//     yield put(payMovieSuccess(response.data));
+//   } catch (error) {
+//     console.log(error);
+//     ;
+//   }
+// }
+
 function* movieSaga() {
-  yield takeLatest(MovieActionTypes.FETCH_MOVIES, fetchMoviesSaga );
-  yield takeLatest(MovieActionTypes.FETCH_MOVIE_BY_ID, fetchMovieByIdSaga );
+  yield takeEvery(MovieActionTypes.FETCH_MOVIES, fetchMoviesSaga );
+  yield takeEvery(MovieActionTypes.FETCH_MOVIE_BY_ID, fetchMovieByIdSaga );
+  // yield takeEvery(MovieActionTypes.PAY_MOVIE, payMovieSaga );
 }
 
 

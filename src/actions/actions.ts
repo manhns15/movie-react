@@ -1,18 +1,12 @@
 import { MovieActionTypes, Movie } from "./types";
 
-export const fetchMovies = (page: number, limit: number) => ({
+export const fetchMovies = () => ({
   type: MovieActionTypes.FETCH_MOVIES,
-  payload: { page ,limit }
 });
 
 export const fetchMoviesSuccess = (movies: Movie[]) => ({
   type: MovieActionTypes.FETCH_MOVIES_SUCCESS,
   payload: movies,
-});
-
-export const fetchMoviesFailure = (error: string) => ({
-  type: MovieActionTypes.FETCH_MOVIES_FAILURE,
-  payload: error,
 });
 
 export const fetchMovieById = (id: number) => ({
@@ -24,3 +18,12 @@ export const fetchMovieByIdSuccess = (data: {}) => ({
   type: MovieActionTypes.FETCH_MOVIE_BY_ID_SUCCESS,
   payload: data,
 });
+
+// export const payMovie = (id: number, data: Movie) => ({
+//   type: MovieActionTypes.PAY_MOVIE,
+//   payload: { id, data },
+// });
+// export const payMovieSuccess = (data: {}) => ({
+//   type: MovieActionTypes.PAY_MOVIE_SUCCESS,
+//   payload: data,
+// });

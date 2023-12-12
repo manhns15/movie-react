@@ -1,14 +1,17 @@
 import http from "./http";
 
-const getAllMovies = async() => {
-    return await http.get("movies");
+const getAllMovies = () => {
+    return  http.get("movies");
 };
-const getMovie = async(id: number) =>{
-  return await http.get(`movies/${id}`)
+const getMovie = (id: number) =>{
+  return  http.get(`movies/${id}`)
 }
-
+const updateMovie = (id:number, data:{})=>{
+  return http.put(`movies/${id}`, data)
+}
 const  movieService = {
   getAllMovies,
   getMovie,
+  updateMovie
 }
 export default movieService

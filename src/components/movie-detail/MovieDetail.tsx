@@ -16,7 +16,10 @@ const MovieDetail = () => {
     }, [dispatch]);
 
     const goBack = () => {
-        navigate(-1);
+        navigate(`/`);
+    };
+    const handleNavigatePayment = (id: number) => {
+        navigate(`/payment/${id}`);
     };
     return (
         <>
@@ -52,7 +55,7 @@ const MovieDetail = () => {
                                         return (
                                             <div className="mv__detail--left-perBl" key={index}>
                                                 <div className="mv__detail--left-avt">
-                                                    <ImageItem src={per?.image} className="" alt=""/>
+                                                    <ImageItem src={per?.image} className="" alt="" />
                                                 </div>
                                                 <span className="mv__detail--left-nameInf">{per?.name}</span>
                                             </div>
@@ -67,8 +70,8 @@ const MovieDetail = () => {
                             </div>
                             <div className="mv__detail--left-btn">
 
-                                {data?.IsPayment ? <button type="button" className="btn btn-primary"><i class="bi bi-badge-4k-fill"></i> Watch now</button>
-                                    : <button type="button" className="btn btn-opacity"><i className="bi bi-cart-plus-fill"></i> Buy Now {data?.Price} $</button>}
+                                {data?.IsPayment ? <button type="button" className="btn btn-primary"><i className="bi bi-badge-4k-fill"></i> Watch now</button>
+                                    : <button type="button" className="btn btn-opacity" onClick={() => handleNavigatePayment(data?.id)}><i className="bi bi-cart-plus-fill"></i> Buy Now {data?.Price} $</button>}
 
                             </div>
 

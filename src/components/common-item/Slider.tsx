@@ -15,6 +15,9 @@ const Slider: FC<sliderProps> = ({ items }) => {
     const handleNavigate = (id: number) => {
         navigate(`/movie-detail/${id}`);
     };
+    const handleNavigatePayment = (id: number) => {
+        navigate(`/payment/${id}`);
+    };
     return (
         <>
             <Slide>
@@ -32,9 +35,8 @@ const Slider: FC<sliderProps> = ({ items }) => {
                                         <li><span>{item?.Country}</span></li>
                                     </ul>
                                 </div>
-                                <button type="button" className="btn btn-opacity"><i className="bi bi-cart-plus-fill"></i>
-                                    Buy Now</button>
-                                <button type="button" className="btn btn-primary" onClick={()=>handleNavigate(item.id)}>Watch Now</button>
+                                {item.IsPayment ? <button type="button" className="btn btn-primary" onClick={() => handleNavigate(item.id)}><i className="bi bi-badge-4k-fill"></i> Watch Now</button> : <button type="button" className="btn btn-opacity" onClick={() => handleNavigatePayment(item.id)}><i className="bi bi-cart-plus-fill"></i>
+                                    Buy Now</button>}
                             </div>
                         </div>
                     )
