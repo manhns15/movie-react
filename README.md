@@ -18,10 +18,10 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
  
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/movie-website.git
- 
-# Change directory to the project folder
-cd <project folder name>
+git clone https://github.com/manhns15/movie-react.git
+
+# git checkout branch
+git checkout develop
  
 # Install dependencies
 npm install
