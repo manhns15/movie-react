@@ -891,9 +891,9 @@
           "name": "Benedict Cumberbatch"
         }
       ],
-      "IsPayment": false,
+      "IsPayment": true,
       "Price": 100,
-      "PaymentMethod": ""
+      "PaymentMethod": "visa"
     }
   ]
 }

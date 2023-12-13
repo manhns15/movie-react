@@ -20,7 +20,7 @@ const Payment = () => {
     const dispatch = useDispatch();
     const { id } = useParams();
     const movieId = parseInt(id, 10);
-    const data = useSelector((state:MovieState) => state.movie.movie);
+    const data = useSelector((state:MovieState) => state.movies.movie);
 
     useEffect(() => {
         if (!isNaN(movieId)) {
