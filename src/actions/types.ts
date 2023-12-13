@@ -1,4 +1,5 @@
 export interface Movie {
+  movie: any;
   id: number,
   Title: string,
   Year: string,
@@ -28,11 +29,13 @@ export interface Movie {
   Price: number,
   PaymentMethod: string
 }
-
 export interface MovieState {
-  movies: Movie[];
-  movie: null
+  movies?: Movie[],
+  movie?: {
+    movie: Movie;
+  };
 }
+
 
 export enum MovieActionTypes {
   FETCH_MOVIES = 'FETCH_MOVIES',

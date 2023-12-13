@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { fetchMovieById } from "../../actions/actions";
-import { Key, SetStateAction, useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import movieService from "../../api/movieAPI";
+import { MovieState } from "../../actions/types";
 
 const Payment = () => {
     const [selectedValue, setSelectedValue] = useState('napas');
@@ -18,11 +19,14 @@ const Payment = () => {
 
     const dispatch = useDispatch();
     const { id } = useParams();
-    const data = useSelector((state) => state.movies.movie);
+    const movieId = parseInt(id, 10);
+    const data = useSelector((state:MovieState) => state.movie.movie);
 
     useEffect(() => {
-        dispatch(fetchMovieById(id));
-    }, [dispatch]);
+        if (!isNaN(movieId)) {
+            dispatch(fetchMovieById(movieId));
+          }
+    }, [dispatch,movieId]);
 
     const handlePayMovie = (id: number) => {
         //  dispatch(payMovie(id, { ...data, IsPayment: true }));

@@ -9,9 +9,9 @@ interface VideoPlayerProps {
 
 const CustomVideoPlayer: React.FC<VideoPlayerProps> = ({ videoSource, autoPlay = false, autoRepeat = false, startTime = 0 }) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isPlaying, setIsPlaying] = useState(autoPlay);
-  const [volume, setVolume] = useState(autoPlay ? 0 : 1);
-  const [isEnded, setIsEnded] = useState(false);
+  // const [isPlaying, setIsPlaying] = useState(autoPlay);
+  const [volume] = useState(autoPlay ? 0 : 1);
+  const [, setIsEnded] = useState(false);
 
   useEffect(() => {
     if (videoRef.current) {

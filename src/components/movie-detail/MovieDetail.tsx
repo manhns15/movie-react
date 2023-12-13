@@ -4,16 +4,20 @@ import { Key, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ImageItem from "../common-item/ImageItem";
 import CustomVideoPlayer from "../common-item/VideoPlayer";
+import { MovieState } from "../../actions/types";
 
 const MovieDetail = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate()
     const { id } = useParams();
-    const data = useSelector((state) => state.movies.movie);
+    const movieId = parseInt(id, 10);
+    const data = useSelector((state: MovieState) => state.movies.movie);
 
     useEffect(() => {
-        dispatch(fetchMovieById(id));
-    }, [dispatch]);
+        if (!isNaN(movieId)) {
+            dispatch(fetchMovieById(movieId));
+        }
+    }, [dispatch, movieId]);
 
     const goBack = () => {
         navigate(`/`);

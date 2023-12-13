@@ -1,13 +1,14 @@
 import { combineReducers } from "redux";
 import { MovieState, MovieActionTypes, Movie } from "../actions/types";
 
-const initialState: MovieState = {
+const initialState:MovieState = {
   movies: [],
-  movie: null
-
+  movie: {
+    movie: {} as Movie,
+  },
 };
 
-const movieReducer = (state = initialState, action: any): MovieState => {
+const movieReducer = (state = initialState, action: { type: string; payload: any }): MovieState => {
   switch (action.type) {
     case MovieActionTypes.FETCH_MOVIES:
       console.log('FETCH_MOVIES_STATE', state);

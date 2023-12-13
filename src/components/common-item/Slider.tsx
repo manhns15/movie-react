@@ -18,6 +18,8 @@ const Slider: FC<sliderProps> = ({ items }) => {
     const handleNavigatePayment = (id: number) => {
         navigate(`/payment/${id}`);
     };
+    console.log(items);
+    
     return (
         <>
             <Slide>
